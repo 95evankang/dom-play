@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>title Goes Here</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/nav.css" />
+     <title>DOM Play</title>
+            <meta charset="utf-8" />
+            <meta name="robots" content="noindex,nofollow" />
+            <meta name="viewport" content="width=device-width" />
+            <link rel="stylesheet" href="css/main.css" />
+            <link rel="stylesheet" href="css/nav.css" />
+
+            <style>
+
+                /*
+                div#play span{
+                background-color: yellow;
+                }
+                */
+
+                /*
+                span.hamlet {
+                background-color:yellow 
+                }   
+                */
+
+            </style>
+
   </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1>DOM Play</h1>
+        
      </header>
      
    <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
+    <div id="play">
+        <p><span data-actor="mom"> Mom: Lan, wake up!</span></p>
+        <p><span data-actor="lan"> Lan: ...</span></p>
+        <p><span data-actor="mom">Mom: If you don't get up, you'll be late for school!</span></p>
+        <p><span data-actor="pet">Pet: PET NetNews! "WWW Crime on the rise!" It says the WWW plan to control the net might be starting!</span></p>
+        <p><span data-actor="lan">Lan: Ugh... Sleep....</span></p>
+        <p><span data-actor="pet">Pet: You've got mail from Dad, too! Look..."Sorry I couldn't get off work Sunday, I'll be home soon. Here's a present for you" it says! There's some battle chip data attached!</span></p>
+        <p><span data-actor="lan">Lan: Yaaaawn ... I was just having a great dream, too.</span></p>
+        <p><span data-actor="pet">PET: "Mail from Dad": I'll expand your chip data, so check on your PET later, </span></p>
+        <p><span data-actor="megaman">Megaman: Lan! Good Morning!</span></p>
+    </div>
+        <footer>
+      <p><small>&copy; 2022 by 
           Evan Kang, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
+  <script src="js/dom-play.js">  </script>
      
  <script src="js/main.js"></script>
      
